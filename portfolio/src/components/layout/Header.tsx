@@ -127,7 +127,7 @@ export function Header() {
           <div className="flex items-center space-x-2">
             {/* Resume Button */}
             <a
-              href="/resume.pdf"
+              href="/documents/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:scale-105"
