@@ -89,6 +89,7 @@
   "successMessage": "Message sent successfully! I'll get back to you soon.",
 "errorMessage": "Failed to send message. Please try again."
 },
+<<<<<<< HEAD
 "header": {
   "name": "Sabeeh Hassan",
   "about": "About",
@@ -98,4 +99,25 @@
   "contact": "Contact",
   "resume": "Resume"
 }
+=======
+
+"footer": {
+    "name": "Sabeeh Hassan",
+    "tagline": "Frontend Developer passionate about creating elegant solutions to complex problems. Let's build something amazing together.",
+    "email": "Email",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch",
+    "availability": "Available for freelance projects and full-time opportunities. Let's create something extraordinary!",
+    "copyright": "© {year} Sabeeh Hassan.",
+    "madeWith": "Made with using Next.js & Tailwind CSS",
+    "backToTop": "Back to Top",
+    "scrollToTop": "Scroll to top",
+    "gmail": "sabeehhassanfarooqui@gmail.com"
+  }
+>>>>>>> feature/footer
 }
