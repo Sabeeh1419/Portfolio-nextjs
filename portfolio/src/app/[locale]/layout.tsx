@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
-// import { routing } from '@/i18n/routing';
+import { routing } from '@/i18n/routing';
 import './globals.css';
 // import {Header} from '@/components/layout/Header';
 

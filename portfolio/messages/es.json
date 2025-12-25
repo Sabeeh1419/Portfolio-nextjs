@@ -1,0 +1,19 @@
+{
+  "common": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "title": "Desarrollador Full Stack",
+    "subtitle": "Construyo experiencias digitales excepcionales",
+    "cta": "Ver Mi Trabajo"
+  },
+  "buttons": {
+    "learnMore": "Saber Más",
+    "viewProject": "Ver Proyecto",
+    "sendMessage": "Enviar Mensaje"
+  }
+}
