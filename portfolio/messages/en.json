@@ -88,5 +88,23 @@
   "availabilityDescription": "Currently open to frontend development opportunities and exciting projects.",
   "successMessage": "Message sent successfully! I'll get back to you soon.",
 "errorMessage": "Failed to send message. Please try again."
-}
+},
+ "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies and tools I use to bring ideas to life",
+    "categories": {
+      "all": "All Skills",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "concepts": "Concepts"
+    },
+    "stats": {
+      "technologies": "Technologies",
+      "projects": "Projects",
+      "experience": "Experience",
+      "learning": "Learning",
+      "learningValue": "Always"
+    }
+  }
 }
