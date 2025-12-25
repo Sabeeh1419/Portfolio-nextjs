@@ -89,7 +89,6 @@
   "successMessage": "Message sent successfully! I'll get back to you soon.",
 "errorMessage": "Failed to send message. Please try again."
 },
-<<<<<<< HEAD
 "header": {
   "name": "Sabeeh Hassan",
   "about": "About",
@@ -98,8 +97,7 @@
   "projects": "Projects",
   "contact": "Contact",
   "resume": "Resume"
-}
-=======
+},
 
 "footer": {
     "name": "Sabeeh Hassan",
@@ -119,5 +117,4 @@
     "scrollToTop": "Scroll to top",
     "gmail": "sabeehhassanfarooqui@gmail.com"
   }
->>>>>>> feature/footer
 }
