@@ -88,5 +88,14 @@
   "availabilityDescription": "Currently open to frontend development opportunities and exciting projects.",
   "successMessage": "Message sent successfully! I'll get back to you soon.",
 "errorMessage": "Failed to send message. Please try again."
+},
+"header": {
+  "name": "Sabeeh Hassan",
+  "about": "About",
+  "experiences": "Experiences",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact",
+  "resume": "Resume"
 }
 }
