@@ -15,3 +15,10 @@
     color: hsl(var(--foreground));
   }
 }
+[dir="rtl"] {
+  direction: rtl;
+}
+
+html[lang="ur"] {
+  direction: rtl;
+}

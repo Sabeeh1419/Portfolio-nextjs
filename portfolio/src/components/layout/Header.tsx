@@ -54,7 +54,7 @@ export function Header() {
   };
 
   const toggleLocale = () => {
-    const newLocale = currentLocale === 'en' ? 'es' : 'en';
+    const newLocale = currentLocale === 'en' ? 'ur' : 'en';
     router.push(pathname, { locale: newLocale });
   };
 
@@ -221,7 +221,7 @@ export function Header() {
                 {t('resume')}
               </a>
 
-              {/* Mobile Language Toggle */}
+              {/* Mobile Language Toggle
               <button
                 onClick={toggleLocale}
                 className="flex items-center justify-center gap-2 px-4 py-3 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-300 border border-slate-700/50"
@@ -230,7 +230,17 @@ export function Header() {
                 <span className="text-sm font-medium">
                   {currentLocale === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
                 </span>
-              </button>
+              </button> */}
+              {/* Mobile Language Toggle */}
+<button
+  onClick={toggleLocale}
+  className="flex items-center justify-center gap-2 px-4 py-3 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-300 border border-slate-700/50"
+>
+  <Globe className="w-4 h-4" />
+  <span className="text-sm font-medium">
+    {currentLocale === 'en' ? 'Switch to Urdu' : 'انگریزی میں تبدیل کریں'}
+  </span>
+</button>
 
               {/* Mobile Social Links */}
               <div className="flex items-center justify-center space-x-4 pt-4 border-t border-slate-800/50">
