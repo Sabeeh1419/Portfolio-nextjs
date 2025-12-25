@@ -88,5 +88,70 @@
   "availabilityDescription": "Currently open to frontend development opportunities and exciting projects.",
   "successMessage": "Message sent successfully! I'll get back to you soon.",
 "errorMessage": "Failed to send message. Please try again."
+},
+ "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies and tools I use to bring ideas to life",
+    "categories": {
+      "all": "All Skills",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools",
+      "concepts": "Concepts"
+    },
+    "stats": {
+      "technologies": "Technologies",
+      "projects": "Projects",
+      "experience": "Experience",
+      "learning": "Learning",
+      "learningValue": "Always"
+    }
+  },
+"header": {
+  "name": "Sabeeh Hassan",
+  "about": "About",
+  "experiences": "Experiences",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact",
+  "resume": "Resume"
+},
+
+"footer": {
+    "name": "Sabeeh Hassan",
+    "tagline": "Frontend Developer passionate about creating elegant solutions to complex problems. Let's build something amazing together.",
+    "email": "Email",
+    "quickLinks": "Quick Links",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch",
+    "availability": "Available for freelance projects and full-time opportunities. Let's create something extraordinary!",
+    "copyright": "© {year} Sabeeh Hassan.",
+    "madeWith": "Made with using Next.js & Tailwind CSS",
+    "backToTop": "Back to Top",
+    "scrollToTop": "Scroll to top",
+    "gmail": "sabeehhassanfarooqui@gmail.com"
+  },
+
+   "projects": {
+    "title": "Selected Projects",
+    "subtitle": "Here are some of my recent projects that showcase my skills and experience",
+    "noProjects": "No projects found in this category",
+    "viewMore": "View More on GitHub",
+    "demo": "Demo",
+    "github": "GitHub",
+    "featured": "Featured",
+    "project1Title": "Testify – AI-Powered Quiz Application",
+    "project1Description": "Developed Testify, an AI-powered quiz web application using React, Node.js, and MySQL. Implemented automated quiz generation and secure file upload functionality. Designed role-based dashboards for admins, instructors, and students. Enabled student performance tracking and result analytics.",
+    "project2Title": "Project Management System",
+    "project2Description": "Created a full-stack web application with React (Frontend), Node.js (Backend), and MongoDB (Database). Designed and implemented RESTful APIs to handle client–server communication. Implemented CRUD operations (Create, Read, Update, Delete) for efficient project record management.",
+    "project3Title": "Crazy Eight Card Game",
+    "project3Description": "Designed and developed an interactive Crazy Eight card game using JavaScript. Implemented core gameplay mechanics including card shuffling, dealing, and rule enforcement. Features smooth animations and intuitive user interface.",
+    "project4Title": "Cipher Tool – Encryption & Decryption",
+    "project4Description": "Built a web-based cipher encoding and decoding tool. Supported multiple classical encryption techniques such as Caesar, Rail Fence, Columnar Transposition, and OTP. User-friendly interface for learning cryptography concepts."
+  }
 }
-}
+

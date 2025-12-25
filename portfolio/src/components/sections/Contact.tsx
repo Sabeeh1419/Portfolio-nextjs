@@ -330,8 +330,8 @@ export function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'sabeehfarooqui@gmail.com',
-      href: 'mailto:sabeehfarooqui@gmail.com',
+      value: 'sabeehhassanfarooqui@gmail.com',
+      href: 'mailto:sabeehhassanfarooqui@gmail.com',
       color: 'text-blue-400',
       bgColor: 'bg-blue-500/10',
       borderColor: 'border-blue-500/20',
@@ -360,7 +360,7 @@ export function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/sabeehfarooqui',
+      href: 'https://github.com/sabeeh1419',
       color: 'hover:text-purple-400',
     },
     {
