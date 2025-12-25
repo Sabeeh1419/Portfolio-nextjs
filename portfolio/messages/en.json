@@ -1,0 +1,92 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Sabeeh Hassan",
+    "greeting": "Available for work",
+    "title": "Frontend Developer",
+    "description": "I'm a frontend-focused software engineer with expertise in React, Next.js, and TypeScript. I build responsive, high-performance web applications with clean code and intuitive user interfaces.",
+    "contactButton": "Contact",
+    "downloadResume": "Download Resume",
+    "whatsapp": "WhatsApp",
+    "yearsExperience": "Years Experience",
+    "projectsCompleted": "Projects Completed",
+    "happyClients": "Happy Clients",
+    "specialized": "Specialized in",
+    "basedIn": "Based in",
+    "location": "Karachi, Pakistan",
+    "skills": "React & next.js"
+  },
+  "buttons": {
+    "learnMore": "Learn More",
+    "viewProject": "View Project",
+    "sendMessage": "Send Message"
+  },
+
+   "about": {
+    "name": "Sabeeh Hassan Farooqui",
+    "title": "About Me",
+    "role": "Frontend Developer",
+    "location": "Karachi, Pakistan",
+    "available": "Available",
+    "phone": "Phone",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "introTitle": "Introduction",
+    "introPara1": "My name is Sabeeh Hassan Farooqui. I am a professional and enthusiastic frontend developer with hands-on expertise in React, Next.js, TypeScript, and modern web technologies. I am a quick learner with a self-learning attitude, always eager to explore new technologies and solve complex problems.",
+    "introPara2": "I recently completed an internship at Codesy Consulting where I contributed to a production-level Next.js application, building responsive UI components and working on AI-powered features. I'm passionate about creating intuitive user interfaces, writing clean and reusable code, and delivering high-performance web experiences.",
+    "introPara3": "My core strength lies in JavaScript-based development, and I enjoy working with React, Next.js, and TypeScript to build scalable applications. I'm actively seeking junior frontend opportunities where I can contribute to AI-enabled products and continue growing as a developer."
+   
+    
+  },
+  "experience": {
+    "title": "Experiences",
+    "job1Period": "January 2025 - March 2025",
+    "job1Role": "FRONTEND WEB DEVELOPER",
+    "job1Company": "Codesy Consulting",
+    "job1Description": "Completed my first internship at Codesy Consulting, where I worked on a Next.js–based web development project. I contributed to UI component development, responsive layouts, and feature implementation while gaining hands-on experience with modern web technologies and best development practices.",
+    "job2Period": "Jan 2022 - May 2023",
+    "job2Role": "Junior Developer",
+    "job2Company": "Tech Solutions Inc",
+    "job2Description": "Worked on building responsive web applications using React and TypeScript. Collaborated with design team to implement pixel-perfect UIs and optimize application performance."
+  },
+   "education": {
+    "title": "Educations",
+    "current": "Present",
+    "edu1Period": "2022 - Present",
+    "edu1Degree": "BACHELOR DEGREE",
+    "edu1Institution": "UBIT, UOK",
+    "edu2Period": "2019 - 2021",
+    "edu2Degree": "INTERMEDIATE IN PRE-ENGINEERING",
+    "edu2Institution": "NCR - College of Emerging Technologies",
+    "edu3Period": "2017 - 2019",
+    "edu3Degree": "MATRICULATION IN COMPUTER SCIENCE",
+    "edu3Institution": "Ghulaman - e - Abbas School"
+  },
+  "contact": {
+  "title": "Contact With Me",
+  "subtitle": "If you have any questions or concerns, please don't hesitate to contact me. I am open to any work opportunities that align with my skills and interests.",
+  "formTitle": "Send Me a Message",
+  "formDescription": "Fill out the form below and I'll get back to you as soon as possible.",
+  "nameLabel": "Your Name",
+  "namePlaceholder": "Enter your name",
+  "emailLabel": "Your Email",
+  "emailPlaceholder": "Enter your email",
+  "messageLabel": "Your Message",
+  "messagePlaceholder": "Write your message here...",
+  "sendButton": "Send Message",
+  "socialTitle": "Follow Me",
+  "availabilityTitle": "Availability",
+  "availableStatus": "Available for Work",
+  "availabilityDescription": "Currently open to frontend development opportunities and exciting projects.",
+  "successMessage": "Message sent successfully! I'll get back to you soon.",
+"errorMessage": "Failed to send message. Please try again."
+}
+}
