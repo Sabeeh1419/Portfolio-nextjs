@@ -60,8 +60,8 @@ export function Header() {
 
   const navItems = [
     { label: t('about'), href: '#about' },
+      { label: t('skills'), href: '#skills' },
     { label: t('experiences'), href: '#experience' },
-    { label: t('skills'), href: '#skills' },
     { label: t('projects'), href: '#projects' },
     { label: t('educations'), href: '#education' },
     { label: t('contact'), href: '#contact' },

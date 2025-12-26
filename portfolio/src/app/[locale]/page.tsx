@@ -20,12 +20,13 @@ export default async function HomePage() {
       {/* <Header /> */}
       <Hero />
       <About />
+       <Skills />
       <Experience />
       <Project />
-      <Skills />
       <Education />
       <Contact />
       {/* <Footer/> */}
     </>
   );
 }
+
