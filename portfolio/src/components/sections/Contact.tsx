@@ -76,8 +76,8 @@ export function Contact() {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+92 308 6169699',
-      href: 'tel:+923086169699',
+      value: '+92 3323583096',
+      href: 'tel:+923323583096',
       color: 'text-green-400',
       bgColor: 'bg-green-500/10',
       borderColor: 'border-green-500/20',
