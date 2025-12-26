@@ -22,3 +22,32 @@
 html[lang="ur"] {
   direction: rtl;
 }
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { 
+      transform: translateY(0px) rotate(12deg); 
+    }
+    50% { 
+      transform: translateY(-10px) rotate(12deg); 
+    }
+  }
+
+  @keyframes float-delay {
+    0%, 100% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-15px); 
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-float-delay {
+    animation: float-delay 4s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+}

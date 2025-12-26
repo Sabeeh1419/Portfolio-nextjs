@@ -15,9 +15,8 @@
     "contactButton": "Contact",
     "downloadResume": "Download Resume",
     "whatsapp": "WhatsApp",
-    "yearsExperience": "Years Experience",
+    "yearsExperience": "Months Experience",
     "projectsCompleted": "Projects Completed",
-    "happyClients": "Happy Clients",
     "specialized": "Specialized in",
     "basedIn": "Based in",
     "location": "Karachi, Pakistan",
@@ -52,23 +51,22 @@
     "job1Role": "FRONTEND WEB DEVELOPER",
     "job1Company": "Codesy Consulting",
     "job1Description": "Completed my first internship at Codesy Consulting, where I worked on a Next.js–based web development project. I contributed to UI component development, responsive layouts, and feature implementation while gaining hands-on experience with modern web technologies and best development practices.",
-    "job2Period": "Jan 2022 - May 2023",
-    "job2Role": "Junior Developer",
-    "job2Company": "Tech Solutions Inc",
-    "job2Description": "Worked on building responsive web applications using React and TypeScript. Collaborated with design team to implement pixel-perfect UIs and optimize application performance."
+    "job2Period": "May 2023 - jan 2025",
+    "job2Role": "Frontend Developer — University Projects",
+    "job2Company": "Personal & Academic Projects",
+    "job2Description": "Completed several university projects involving the design and development of web applications using React and JavaScript. Focused on creating responsive layouts, implementing user-friendly interfaces, and improving application behavior through debugging and optimization. These projects helped strengthen problem-solving skills and understanding of modern frontend development workflows."
   },
    "education": {
     "title": "Educations",
-    "current": "Present",
-    "edu1Period": "2022 - Present",
+    "edu1Period": "2021 - 2025",
     "edu1Degree": "BACHELOR DEGREE",
-    "edu1Institution": "UBIT, UOK",
+    "edu1Institution": "UBIT, University of Karachi",
     "edu2Period": "2019 - 2021",
     "edu2Degree": "INTERMEDIATE IN PRE-ENGINEERING",
-    "edu2Institution": "NCR - College of Emerging Technologies",
+    "edu2Institution": "GOVT.DEGREE COLLEGE GULSHAN-E-IQBAL",
     "edu3Period": "2017 - 2019",
     "edu3Degree": "MATRICULATION IN COMPUTER SCIENCE",
-    "edu3Institution": "Ghulaman - e - Abbas School"
+    "edu3Institution": "BAHRIA FOUNDATION SCHOOL & COLLEGE"
   },
   "contact": {
   "title": "Contact With Me",

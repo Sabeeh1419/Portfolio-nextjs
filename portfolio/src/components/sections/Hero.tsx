@@ -38,9 +38,9 @@ export function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:64px_64px]"></div>
 
       <Container className="relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen py-20 gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen py-20 gap-6 lg:gap-12">
           {/* Left Content */}
-          <div className="flex-1 space-y-8 text-center lg:text-left">
+          <div className="flex-1 space-y-2 md:space-y-8 text-center lg:text-left">
             {/* Greeting Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full backdrop-blur-sm">
               <span className="relative flex h-3 w-3">
@@ -51,22 +51,22 @@ export function Hero() {
             </div>
 
             {/* Name */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
               <span className="bg-gradient-to-r from-white via-blue-100 to-blue-200 bg-clip-text text-transparent">
                 {t('name')}
               </span>
             </h1>
 
             {/* Title with typing effect styling */}
-            <div className="space-y-2">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-400">
+            <div className="space-y-1 md:space-y-2">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-blue-400">
                 {t('title')}
               </h2>
-              <div className="h-1 w-39 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto lg:mx-0"></div>
+              <div className="h-1 w-24 md:w-39 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto lg:mx-0"></div>
             </div>
 
             {/* Description */}
-            <p className="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed">
+            <p className="text-1xl md:text-xl text-slate-300 max-w-2xl leading-relaxed">
               {t('description')}
             </p>
 
@@ -113,10 +113,10 @@ export function Hero() {
                 <div className="text-2xl font-bold text-white">50+</div>
                 <div className="text-slate-400">{t('projectsCompleted')}</div>
               </div>
-              <div className="text-center lg:text-left">
+              {/* <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-white">30+</div>
                 <div className="text-slate-400">{t('happyClients')}</div>
-              </div>
+              </div> */}
             </div>
           </div>
 

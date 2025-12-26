@@ -158,7 +158,7 @@ export function Experience() {
                         </div>
 
                         {/* Role */}
-                        <Typography variant="h4" className="text-white mb-2">
+                        <Typography variant="h5" className="text-white mb-2">
                           {exp.role}
                         </Typography>
 

@@ -1,4 +1,3 @@
-// src/components/sections/Education.tsx
 'use client';
 
 import { useTranslations } from 'next-intl';
@@ -37,20 +36,20 @@ export function Education() {
   ];
 
   return (
-    <SectionWrapper id="education" className="bg-slate-900">
+    <SectionWrapper id="education" className="bg-slate-900 ">
       <Container>
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 lg:mb-16">
             <Typography variant="h2" className="text-white mb-4">
               {t('title')}
             </Typography>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto"></div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Illustration */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Side - Illustration (Hidden on mobile, shown on lg+) */}
+            <div className="hidden lg:flex justify-center lg:justify-start order-2 lg:order-1">
               <div className="relative">
                 {/* Animated Background Glow */}
                 <div className="absolute inset-0 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -60,7 +59,7 @@ export function Education() {
                   {/* 3D Isometric Platform */}
                   <div className="relative transform hover:scale-105 transition-transform duration-500">
                     {/* Base Platform */}
-                    <div className="relative w-80 h-12 bg-gradient-to-r from-pink-600 to-red-600 rounded-3xl shadow-2xl transform perspective-1000 rotate-x-15">
+                    <div className="relative w-80 h-12 bg-gradient-to-r from-pink-600 to-red-600 rounded-3xl shadow-2xl">
                       {/* Platform Depth */}
                       <div className="absolute inset-0 bg-gradient-to-b from-pink-600 to-pink-800 rounded-3xl transform translate-y-2"></div>
                       
@@ -90,10 +89,10 @@ export function Education() {
                               <div className="h-full w-4/5 bg-gradient-to-r from-blue-400 to-blue-500 rounded animate-pulse"></div>
                             </div>
                             <div className="h-1.5 w-full bg-slate-700 rounded overflow-hidden">
-                              <div className="h-full w-3/5 bg-gradient-to-r from-purple-400 to-purple-500 rounded animate-pulse delay-100"></div>
+                              <div className="h-full w-3/5 bg-gradient-to-r from-purple-400 to-purple-500 rounded animate-pulse"></div>
                             </div>
                             <div className="h-1.5 w-full bg-slate-700 rounded overflow-hidden">
-                              <div className="h-full w-2/3 bg-gradient-to-r from-pink-400 to-pink-500 rounded animate-pulse delay-200"></div>
+                              <div className="h-full w-2/3 bg-gradient-to-r from-pink-400 to-pink-500 rounded animate-pulse"></div>
                             </div>
                           </div>
                         </div>
@@ -109,7 +108,7 @@ export function Education() {
 
                     {/* Floating Icons Around */}
                     {/* Book Icon */}
-                    <div className="absolute -left-16 top-4 group">
+                    <div className="absolute -left-16 top-4">
                       <div className="w-12 h-14 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg shadow-xl transform rotate-12 hover:rotate-6 transition-transform animate-float">
                         <div className="absolute inset-2 border-l-2 border-purple-300"></div>
                         <div className="absolute top-1 left-1 right-1 h-1 bg-purple-300 rounded"></div>
@@ -117,7 +116,7 @@ export function Education() {
                     </div>
 
                     {/* Graduation Cap Icon */}
-                    <div className="absolute -right-12 -top-8 group">
+                    <div className="absolute -right-12 -top-8">
                       <div className="relative w-16 h-16 animate-float-delay">
                         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg transform rotate-45 shadow-xl"></div>
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-blue-400 rounded-full"></div>
@@ -127,7 +126,7 @@ export function Education() {
                     </div>
 
                     {/* Certificate Icon */}
-                    <div className="absolute -left-8 -bottom-16 group">
+                    <div className="absolute -left-8 -bottom-16">
                       <div className="w-14 h-10 bg-gradient-to-br from-pink-500 to-pink-700 rounded shadow-xl transform -rotate-12 hover:-rotate-6 transition-transform animate-float">
                         <div className="absolute inset-2 border border-pink-300 rounded"></div>
                         <div className="absolute bottom-1 right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -149,7 +148,7 @@ export function Education() {
                         <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-1 bg-pink-500 rounded-full"></div>
                       </div>
                       {/* Body */}
-                      <div className="w-10 h-12 bg-gradient-to-b from-purple-500 to-purple-700 rounded-b-lg -mt-1 mx-auto">
+                      <div className="w-10 h-12 bg-gradient-to-b from-purple-500 to-purple-700 rounded-b-lg -mt-1 mx-auto relative">
                         <div className="absolute -left-3 top-2 w-6 h-1.5 bg-purple-600 rounded transform -rotate-45"></div>
                         <div className="absolute -right-3 top-2 w-6 h-1.5 bg-purple-600 rounded transform rotate-45"></div>
                       </div>
@@ -168,51 +167,43 @@ export function Education() {
             </div>
 
             {/* Right Side - Education Cards */}
-            <div className="space-y-6 order-1 lg:order-2">
+            <div className="space-y-4 lg:space-y-6 order-1 lg:order-2">
               {educations.map((edu, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                >
+                <div key={index} className="relative group">
                   {/* Glow Effect */}
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-50 blur transition-opacity duration-500"></div>
                   
                   {/* Card */}
-                  <div className="relative bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500">
-                    <div className="flex gap-4">
+                  <div className="relative bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-xl lg:rounded-2xl p-4 lg:p-6 shadow-xl hover:shadow-2xl transition-all duration-500">
+                    <div className="flex gap-3 lg:gap-4">
                       {/* Icon */}
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                          <GraduationCap className="w-6 h-6 text-white" />
+                        <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                          <GraduationCap className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
                         </div>
                       </div>
 
                       {/* Content */}
-                      <div className="flex-1">
+                      <div className="flex-1 min-w-0">
                         {/* Period */}
-                        <div className="flex items-center gap-2 mb-3">
-                          <span className="text-sm text-emerald-400 font-medium">{edu.period}</span>
-                          {edu.current && (
-                            <span className="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/30 rounded-full text-xs text-emerald-400">
-                              {t('current')}
-                            </span>
-                          )}
+                        <div className="flex items-center gap-2 mb-2 lg:mb-3">
+                          <span className="text-xs lg:text-sm text-emerald-400 font-medium">{edu.period}</span>
                         </div>
 
                         {/* Degree */}
-                        <Typography variant="h5" className="text-white mb-2">
+                        <h3 className="text-base lg:text-xl font-bold text-white mb-1 lg:mb-2">
                           {edu.degree}
-                        </Typography>
+                        </h3>
 
                         {/* Institution */}
-                        <p className="text-slate-400">
+                        <p className="text-sm lg:text-base text-slate-400">
                           {edu.institution}
                         </p>
                       </div>
                     </div>
 
                     {/* Decorative Corner */}
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-500/10 to-transparent rounded-tr-2xl"></div>
+                    <div className="absolute top-0 right-0 w-16 lg:w-20 h-16 lg:h-20 bg-gradient-to-br from-purple-500/10 to-transparent rounded-tr-xl lg:rounded-tr-2xl"></div>
                   </div>
                 </div>
               ))}
@@ -220,27 +211,6 @@ export function Education() {
           </div>
         </div>
       </Container>
-
-      {/* Animations */}
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(12deg); }
-          50% { transform: translateY(-10px) rotate(12deg); }
-        }
-        @keyframes float-delay {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-15px); }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        .animate-float-delay {
-          animation: float-delay 4s ease-in-out infinite;
-          animation-delay: 1s;
-        }
-        .delay-100 { animation-delay: 100ms; }
-        .delay-200 { animation-delay: 200ms; }
-      `}</style>
     </SectionWrapper>
   );
 }
