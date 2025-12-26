@@ -213,7 +213,7 @@ export function Header() {
               
               {/* Mobile Resume Button */}
               <a
-                href="/resume.pdf"
+                href="/documents/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg transition-all duration-300 mt-2"
