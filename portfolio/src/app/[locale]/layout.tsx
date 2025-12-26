@@ -5,7 +5,8 @@ import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import { routing } from '@/i18n/routing';
 import './globals.css';
-// import {Header} from '@/components/layout/Header';
+import {Header} from '@/components/layout/Header';
+import {Footer} from '@/components/layout/Footer'
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -37,9 +38,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === 'ur' ? 'rtl' : 'ltr'}>
       <body className={inter.className}>
-           {/* <Header /> */}
+           
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
+          <Footer/>
         </NextIntlClientProvider>
       </body>
     </html>

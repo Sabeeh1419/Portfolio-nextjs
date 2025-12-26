@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { Container } from '@/components/common/Container';
+import { SectionWrapper } from '@/components/common/SectionWrapper';
 
-export default function SkillsSection() {
+export function SkillsSection() {
   const t = useTranslations('skills');
   const [activeCategory, setActiveCategory] = useState('all');
 
@@ -226,100 +228,103 @@ export default function SkillsSection() {
     : skills.filter(skill => skill.category === activeCategory);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 py-20 overflow-hidden">
+    <SectionWrapper id="skills" className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 py-20 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="inline-block text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            {t('title')}
-          </h2>
-          <div className="h-1 w-32 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
-          <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto">
-            {t('subtitle')}
-          </p>
-        </div>
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`
-                group relative px-2 py-1 md:px-6 md:py-3 rounded-xl font-medium transition-all duration-300
-                ${activeCategory === category.id
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-purple-500/50 scale-105'
-                  : 'bg-slate-800/50 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-700/50'
-                }
-              `}
-            >
-              <span className="flex items-center gap-2">
-                <span>{category.icon}</span>
-                <span>{category.name}</span>
-              </span>
-            </button>
-          ))}
-        </div>
+      <Container>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="inline-block text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              {t('title')}
+            </h2>
+            <div className="h-1 w-32 mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
+            <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto">
+              {t('subtitle')}
+            </p>
+          </div>
+          
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setActiveCategory(category.id)}
+                className={`
+                  group relative px-1 py-1 md:px-6 md:py-3 rounded-xl font-medium transition-all duration-300
+                  ${activeCategory === category.id
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-purple-500/50 scale-105'
+                    : 'bg-slate-800/50 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-700/50'
+                  }
+                `}
+              >
+                <span className="flex items-center gap-2">
+                  <span>{category.icon}</span>
+                  <span>{category.name}</span>
+                </span>
+              </button>
+            ))}
+          </div>
 
-        {/* Skills Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-          {filteredSkills.map((skill, index) => (
-            <div
-              key={skill.name}
-              className="group relative "
-              style={{
-                animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
-              }}
-            >
-              <div className="relative bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 transition-all duration-300 hover:border-slate-600 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-2">
-                {/* Gradient overlay on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300`}></div>
-                
-                {/* Icon */}
-                <div className="relative flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                  {skill.icon}
+          {/* Skills Grid */}
+          <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+            {filteredSkills.map((skill, index) => (
+              <div
+                key={skill.name}
+                className="group relative"
+                style={{
+                  animation: `fadeInUp 0.6s ease-out ${index * 0.05}s both`
+                }}
+              >
+                <div className="relative bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-6 transition-all duration-300 hover:border-slate-600 hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-2">
+                  {/* Gradient overlay on hover */}
+                  <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300`}></div>
+                  
+                  {/* Icon */}
+                  <div className="relative flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                    {skill.icon}
+                  </div>
+                  
+                  {/* Skill Name */}
+                  <h4 className="relative text-center text-white font-semibold text-sm">
+                    {skill.name}
+                  </h4>
+
+                  {/* Animated border */}
+                  <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl`}></div>
                 </div>
-                
-                {/* Skill Name */}
-                <h3 className="relative text-center text-white font-semibold text-sm">
-                  {skill.name}
-                </h3>
-
-                {/* Animated border */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl`}></div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[
-            { label: t('stats.technologies'), value: '17+' },
-            { label: t('stats.projects'), value: '20+' },
-            { label: t('stats.experience'), value: '2+ Years' },
-            { label: t('stats.learning'), value: t('stats.learningValue') }
-          ].map((stat, index) => (
-            <div
-              key={stat.label}
-              className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-2 md:p-6 text-center hover:border-slate-600 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20"
-              style={{
-                animation: `fadeInUp 0.6s ease-out ${1 + index * 0.1}s both`
-              }}
-            >
-              <div className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
-                {stat.value}
+          {/* Stats Section */}
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { label: t('stats.technologies'), value: '17+' },
+              { label: t('stats.projects'), value: '20+' },
+              { label: t('stats.experience'), value: '2+ Years' },
+              { label: t('stats.learning'), value: t('stats.learningValue') }
+            ].map((stat, index) => (
+              <div
+                key={stat.label}
+                className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-2 md:p-6 text-center hover:border-slate-600 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20"
+                style={{
+                  animation: `fadeInUp 0.6s ease-out ${1 + index * 0.1}s both`
+                }}
+              >
+                <div className="text-xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-slate-400 text-sm font-medium">{stat.label}</div>
               </div>
-              <div className="text-slate-400 text-sm font-medium">{stat.label}</div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </Container>
 
       <style>{`
         @keyframes fadeInUp {
@@ -333,6 +338,8 @@ export default function SkillsSection() {
           }
         }
       `}</style>
-    </section>
+    </SectionWrapper>
   );
 }
+
+export default SkillsSection;

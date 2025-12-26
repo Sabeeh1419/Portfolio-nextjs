@@ -7,8 +7,8 @@ import  Education  from '@/components/sections/Educations';
 import Contact from '@/components/sections/Contact';
 import Project from '@/components/sections/Projects/Projects';
 import Skills from '@/components/sections/Skills';
-import {Footer} from '@/components/layout/Footer'
-import {Header} from '@/components/layout//Header';
+// import {Footer} from '@/components/layout/Footer'
+// import {Header} from '@/components/layout//Header';
 
 
 export default async function HomePage() {
@@ -17,7 +17,7 @@ export default async function HomePage() {
   return (
 
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <About />
       <Experience />
@@ -25,7 +25,7 @@ export default async function HomePage() {
       <Skills />
       <Education />
       <Contact />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }

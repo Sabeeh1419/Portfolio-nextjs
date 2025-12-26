@@ -42,7 +42,7 @@ export function Projects() {
               <button
                 key={index}
                 onClick={() => setActiveFilter(category)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
+                className={`px-2 md:px-4 py-1 md:py-2 rounded-lg font-medium transition-all duration-300 ${
                   activeFilter === category
                     ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/50 scale-105'
                     : 'bg-slate-800/50 text-slate-300 hover:bg-slate-700/50 hover:text-white border border-slate-700/50'

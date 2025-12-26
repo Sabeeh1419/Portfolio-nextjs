@@ -63,6 +63,7 @@ export function Header() {
     { label: t('experiences'), href: '#experience' },
     { label: t('skills'), href: '#skills' },
     { label: t('projects'), href: '#projects' },
+    { label: t('educations'), href: '#education' },
     { label: t('contact'), href: '#contact' },
   ];
 

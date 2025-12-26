@@ -78,7 +78,7 @@ export function Hero() {
                 size="lg"
                 className="group relative overflow-hidden bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all duration-300"
               >
-                <Mail className="w-5 h-5 mr-2" />
+                <Mail className="w-1 md:w-5 h-1 md:h-5 md:mr-2" />
                 <span>{t('contactButton')}</span>
               </Button>
 
@@ -88,7 +88,7 @@ export function Hero() {
                 size="lg"
                 className="group border-slate-600 hover:border-blue-500 text-slate-300 hover:text-white hover:bg-blue-500/10 transition-all duration-300"
               >
-                <Download className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                <Download className="w-1 md:w-5 h-1 md:h-5 md:mr-2 group-hover:animate-bounce" />
                 <span>{t('downloadResume')}</span>
               </Button>
 
@@ -98,7 +98,7 @@ export function Hero() {
                 size="lg"
                 className="group border-slate-600 hover:border-green-500 text-slate-300 hover:text-white hover:bg-green-500/10 transition-all duration-300"
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
+                <MessageCircle className="w-1 md:w-5 h-1 md:h-5 md:mr-2" />
                 <span>{t('whatsapp')}</span>
               </Button>
             </div>
@@ -106,11 +106,11 @@ export function Hero() {
             {/* Stats or Social Links */}
             <div className="flex flex-wrap gap-8 justify-center lg:justify-start pt-8 text-sm">
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-white">5+</div>
+                <div className="text-2xl font-bold text-white">3+</div>
                 <div className="text-slate-400">{t('yearsExperience')}</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-white">50+</div>
+                <div className="text-2xl font-bold text-white">15+</div>
                 <div className="text-slate-400">{t('projectsCompleted')}</div>
               </div>
               {/* <div className="text-center lg:text-left">
