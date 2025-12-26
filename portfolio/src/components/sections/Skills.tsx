@@ -304,9 +304,9 @@ export function SkillsSection() {
           {/* Stats Section */}
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { label: t('stats.technologies'), value: '17+' },
-              { label: t('stats.projects'), value: '20+' },
-              { label: t('stats.experience'), value: '2+ Years' },
+              { label: t('stats.technologies'), value: '15+' },
+              { label: t('stats.projects'), value: '10+' },
+              { label: t('stats.experience'), value: '3+ Months' },
               { label: t('stats.learning'), value: t('stats.learningValue') }
             ].map((stat, index) => (
               <div
