@@ -39,9 +39,10 @@ export function Footer() {
 
   const quickLinks = [
     { label: t('about'), href: '#about' },
-    { label: t('experience'), href: '#experience' },
     { label: t('skills'), href: '#skills' },
+      { label: t('experience'), href: '#experience' },
     { label: t('projects'), href: '#projects' },
+      { label: t('education'), href: '#education' },
     { label: t('contact'), href: '#contact' }
   ];
 

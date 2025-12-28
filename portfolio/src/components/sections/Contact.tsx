@@ -103,7 +103,7 @@ export function Contact() {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/sabeeh-farooqui',
+      href: 'https://linkedin.com/in/sabeeh-hassan',
       color: 'hover:text-blue-400',
     },
   ];
