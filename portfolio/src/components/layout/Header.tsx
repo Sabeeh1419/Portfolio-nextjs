@@ -147,7 +147,7 @@ export function Header() {
             </button>
 
             {/* Theme Toggle */}
-            <button
+            {/* <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
               className="p-2 text-slate-300 hover:text-white hover:bg-slate-800/50 rounded-lg transition-all duration-300 border border-slate-700/50"
@@ -157,7 +157,7 @@ export function Header() {
               ) : (
                 <Moon className="w-5 h-5" />
               )}
-            </button>
+            </button> */}
 
             {/* Social Links - Desktop */}
             <div className="hidden md:flex items-center space-x-1">
